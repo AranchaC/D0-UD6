@@ -13,7 +13,8 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class ComsumoApiRestApplication {
 
-	private static final Logger log = LoggerFactory.getLogger(ComsumoApiRestApplication.class);
+	private static final Logger log = LoggerFactory.getLogger
+			(ComsumoApiRestApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(ComsumoApiRestApplication.class, args);

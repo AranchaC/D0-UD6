@@ -29,7 +29,7 @@ public class QuoteController {
 	}
 
 	@GetMapping("/api/{id}")
-	public QuoteResource getOne(@PathVariable Long id) {
+	public QuoteResource getOne(@PathVariable(name="id") Long id) {
 
 		return repository.findById(id)
 			.map(quote -> new QuoteResource(quote, "success"))
